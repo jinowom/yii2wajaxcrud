@@ -1,0 +1,52 @@
+{
+  "name": "jinowom/yii2wajaxcrud",
+  "description": "Gii CRUD template for Single Page Ajax Administration for yii2",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "ajax",
+    "crud",
+    "gii",
+    "template",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "jinowom",
+      "email": "chareler@163.com",
+      "homepage": "https://github.com/jinowom?tab=repositories"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jinowom/yii2wajaxcrud/issues?state=open",
+    "source": "https://github.com/jinowom/yii2wajaxcrud"
+  },
+  "require": {
+    "php": ">=7.1",
+    "yiisoft/yii2": "^2.0.45",
+    "yiisoft/yii2-bootstrap5": "^2.0.4",
+    "kartik-v/yii2-krajee-base": "^2.0|^3.0.5",
+    "kartik-v/yii2-grid": "^3.5.3",
+    "kartik-v/yii2-detail-view": "^1.8.2",
+    "kartik-v/yii2-date-range": "^1.8.0",
+    "kartik-v/yii2-mpdf": "^1.0.6",
+    "kartik-v/yii2-editable": "^1.7.8",
+    "kartik-v/yii2-widget-activeform": "^1.6.4",
+    "moonlandsoft/yii2-phpexcel": "^2.0.0",
+    "jinowom/yii2jtools": "^1.0.3",
+    "wodrow/yii2wsoftdelete": "^1.0.1"
+  },
+  "require-dev": {
+    "yiisoft/yii2-gii": "^2.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "jinowom\\wajaxcrud\\": "src/"
+    }
+  },
+  "extra": {
+    "bootstrap": "jinowom\\wajaxcrud\\Bootstrap"
+  }
+}

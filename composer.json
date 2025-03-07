@@ -25,8 +25,8 @@
   },
   "require": {
     "php": ">=7.1",
-    "yiisoft/yii2": "^2.0.45",
-    "yiisoft/yii2-bootstrap5": "^2.0.4",
+    "yiisoft/yii2": "^2.0.14",
+    "yiisoft/yii2-bootstrap": "^2.0.0",
     "kartik-v/yii2-krajee-base": "^2.0|^3.0.5",
     "kartik-v/yii2-grid": "^3.5.3",
     "kartik-v/yii2-detail-view": "^1.8.2",
@@ -35,7 +35,7 @@
     "kartik-v/yii2-editable": "^1.7.8",
     "kartik-v/yii2-widget-activeform": "^1.6.4",
     "moonlandsoft/yii2-phpexcel": "^2.0.0",
-    "jinowom/yii2jtools": "^1.0.3",
+    "wodrow/yii2wtools": "^1.0.7",
     "wodrow/yii2wsoftdelete": "^1.0.1"
   },
   "require-dev": {

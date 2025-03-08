@@ -18,8 +18,14 @@ class Bootstrap implements BootstrapInterface {
      * @param Application $app the application currently running
      */
     public function bootstrap($app) {
-        Yii::setAlias("@wajaxcrud", __DIR__);
-        Yii::setAlias("@jinowom/wajaxcrud", __DIR__);
+        Yii::setAlias("@wajaxcrud", __DIR__);//这个Botstrap无法被调用，囧！！
+        Yii::setAlias("@jinowom/wajaxcrud", __DIR__);//这个Botstrap无法被调用，囧！！
+        /*
+         * 既然不能被调用，就把如下两个放到/common/config/bootstrap.php 里。
+         //Yii::setAlias('@wajaxcrud', dirname(dirname(__DIR__))  . '/vendor/jinowom/yii2wajaxcrud/src');
+         //Yii::setAlias("@jinowom/wajaxcrud", dirname(dirname(__DIR__))  . '/vendor/jinowom/yii2wajaxcrud/src');
+         * 
+         */
         /*if ($app->hasModule('gii')) {
             if (!isset($app->getModule('gii')->generators['ajaxcrud'])) {
                 $app->getModule('gii')->generators['ajaxcrud'] = 'jinowom\wajaxcrud\generators\Generator';

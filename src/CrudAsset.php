@@ -10,8 +10,15 @@ use yii\web\AssetBundle;
  */
 class CrudAsset extends AssetBundle
 {
-    public $sourcePath = '@wajaxcrud/assets';
-
+    public $sourcePath = '@vendor/jinowom/yii2wajaxcrud/src/assets';
+    /* 
+     * 方法一：public $sourcePath = '@wajaxcrud/assets';
+     * 这个使用'@wajaxcrud/assets别名；@wajaxcrud别名定义 可写在 /common/config/bootstrap.php 里
+     * Yii::setAlias('@wajaxcrud', dirname(dirname(__DIR__)) . '/vendor/jinowom/yii2wajaxcrud/src/');//jinowom/yii2wajaxcrud组件加载的别名
+     * 方法二：public $sourcePath = '@vendor/jinowom/yii2wajaxcrud/src/assets';
+     * //public $sourcePath = '@vendor/jinowom/yii2wajaxcrud/src/assets';// 这个写法，直接使用@vendor也可以
+    */
+    
 //    public $publishOptions = [
 //        'forceCopy' => true,
 //    ];

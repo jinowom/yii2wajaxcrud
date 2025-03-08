@@ -8,6 +8,7 @@ yii2wajaxcrud
 Gii CRUD template for Single Page Ajax Administration for yii2 
 
 + Requires yiisoft/yii2-bootstrap5:"^2.0.4"
++ Requires yiisoft/yii2-bootstrap:"^2.0.0"
 
 
 Features
@@ -27,17 +28,17 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wodrow/yii2wajaxcrud "^2.1"
+php composer.phar require --prefer-dist jinowom/yii2wajaxcrud "^1.0.0"
 or
-php composer.phar require --prefer-dist wodrow/yii2wajaxcrud "^3.0"
+php composer.phar require --prefer-dist jinowom/yii2wajaxcrud "^1.0.2"
 ```
 
 or add
 
 ```
-"wodrow/yii2wajaxcrud": "^2.1"
+"jinowom/yii2wajaxcrud": "^1.0.0"
 or
-"wodrow/yii2wajaxcrud": "^3.0"
+"jinowom/yii2wajaxcrud": "^1.0.2"
 ```
 
 to the require section of your `composer.json` file.
@@ -65,11 +66,11 @@ $config['modules']['gii'] = [
     'class' => 'yii\gii\Module',
 ];
 $config['modules']['gii']['generators']['wodrowmodel'] = [
-    'class' => \wodrow\wajaxcrud\generators\model\Generator::class,
+    'class' => \jinowom\wajaxcrud\generators\model\Generator::class,
     'showName' => "YOUR MODEL GENERATOR",
 ];
 $config['modules']['gii']['generators']['wodrowwajaxcrud'] = [
-    'class' => \wodrow\wajaxcrud\generators\crud\Generator::class,
+    'class' => \jinowom\wajaxcrud\generators\crud\Generator::class,
     'showName' => "YOUR AJAX CRUD GENERATOR",
 ];
 ````
@@ -89,4 +90,10 @@ Others
 ```text
 #只对github.com
 git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+```
+感谢
+------------
+```text
+#wodrow <wodrow451611cv@gmail.com>
+#Kartik Visweswaran <kartikv2@gmail.com>
 ```
